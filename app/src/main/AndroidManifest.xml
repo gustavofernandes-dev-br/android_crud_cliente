@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Crudclientes">
+        >
         <activity android:name=".ui.SplashScreen"
             android:screenOrientation="portrait"
+            android:theme="@style/Theme.CrudclientesSemBarra"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +20,11 @@
         </activity>
         <activity android:name=".ui.ActivityPrincipalLogin"
             android:screenOrientation="portrait"
-            >
-
+            android:theme="@style/Theme.CrudclientesSemBarra">
         </activity>
-    </application>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
 </manifest>
